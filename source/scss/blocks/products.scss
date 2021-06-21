@@ -1,0 +1,65 @@
+.products {
+    padding-top: 220px;
+    background-color: #eff7f3;
+    &__title {
+        position: relative;
+        font-family: "DS_Stamper";
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 62px;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1;
+        margin-bottom: 35px;
+    }
+    &__title::before {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        top: 38px;
+        width: 610px;
+        height: 20px;
+        background-image: url("../images/title-line.svg");
+        background-repeat: no-repeat;
+    }
+
+    &__tabs {
+    }
+}
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 1200px) {
+    .products {
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+        }
+        &__title::before {
+            display: none;
+        }
+
+        &__tabs {
+        }
+    }
+}
+@media screen and (max-width: 770px) {
+    
+}
+
+@media screen and (max-width: 660px) {
+    .products {
+        padding-top: 180px;
+        &__title {
+
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .products {
+        &__title {
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+}
