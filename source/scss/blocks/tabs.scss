@@ -3,7 +3,6 @@
         text-align: center;
         margin-bottom: 25px;
     }
-
     &__triggers-item {
         position: relative;
         font-family: "DS_Stamper";
@@ -30,11 +29,11 @@
         background-size: contain;
         z-index: -1;
     }
-
-    &__content {
-    }
-
     &__content-item {
+        display: none;
+    }
+    &__content-item.tabs__content-item--active {
+        display: block;
     }
 
     &__content-slider {
